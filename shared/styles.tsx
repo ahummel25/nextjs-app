@@ -4,11 +4,20 @@ import styled from '@emotion/styled'
 export const globalStyles = (
   <Global
     styles={css`
-      html,
+      html {
+		padding: 3rem 1rem;
+        margin: 0;
+		background-image: url('${require('../images/image.png')}');
+		background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100%;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 24px;
+	  }
       body {
         padding: 3rem 1rem;
         margin: 0;
-        background: papayawhip;
         min-height: 100%;
         font-family: Helvetica, Arial, sans-serif;
         font-size: 24px;

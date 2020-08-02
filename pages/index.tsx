@@ -23,6 +23,9 @@ const Index = () => {
 
   return (
     <div>
+		{/* <div>
+    <img src={require('../images/image.png')} />
+  </div> */}
       <h1>GraphQL Job Board</h1>
       <p>A list of open GraphQL jobs.</p>
       <JobList jobs={jobs?.data?.jobs || []} />
