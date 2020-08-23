@@ -1,0 +1,49 @@
+{
+	"root": true,
+	"parser": "babel-eslint",
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:import/errors",
+		"plugin:import/warnings",
+		"plugin:jsx-a11y/recommended",
+		"plugin:react-hooks/recommended",
+		"airbnb"
+	],
+	"env": {
+		"browser": true,
+		"commonjs": true,
+		"es6": true,
+		"node": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 2018,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"rules": {
+		"comma-dangle": [
+			"error",
+			"never"
+		],
+		"func-names": [
+			"error",
+			"never"
+		],
+		"import/named": 2,
+		"import/order": [
+			"error",
+			{
+				"newlines-between": "always"
+			}
+		]
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	},
+	"plugins": []
+}

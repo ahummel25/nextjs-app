@@ -1,6 +1,7 @@
 .cache
 node_modules
-public
+public/*.js
+public/*.js.map
 
 # next.js build output
 .next

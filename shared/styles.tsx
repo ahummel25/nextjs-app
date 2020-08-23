@@ -1,5 +1,5 @@
-import { keyframes, css, Global } from '@emotion/core'
-import styled from '@emotion/styled'
+import { keyframes, css, Global } from '@emotion/core';
+import styled from '@emotion/styled';
 
 export const globalStyles = (
   <Global
@@ -7,10 +7,10 @@ export const globalStyles = (
       html {
 		padding: 3rem 1rem;
         margin: 0;
-		background-image: url('${require('../images/image.png?webp')}');
+		/*background-image: url('${require('../images/image.png?webp')}');
 		background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover;*/
         min-height: 100%;
         font-family: Helvetica, Arial, sans-serif;
         font-size: 24px;
@@ -24,7 +24,7 @@ export const globalStyles = (
       }
     `}
   />
-)
+);
 
 export const basicStyles = css`
   background-color: white;
@@ -36,7 +36,7 @@ export const basicStyles = css`
   transition: all 0.1s linear;
   margin: 3rem 0;
   padding: 1rem 0.5rem;
-`
+`;
 
 export const hoverStyles = css`
   &:hover {
@@ -45,7 +45,7 @@ export const hoverStyles = css`
     border-color: aqua;
     box-shadow: -15px -15px 0 0 aqua, -30px -30px 0 0 cornflowerblue;
   }
-`
+`;
 export const bounce = keyframes`
   from {
     transform: scale(1.01);
@@ -53,11 +53,11 @@ export const bounce = keyframes`
   to {
     transform: scale(0.99);
   }
-`
+`;
 
 export const Basic = styled('div')`
   ${basicStyles};
-`
+`;
 
 export const Combined = styled('div')`
   ${basicStyles};
@@ -65,7 +65,7 @@ export const Combined = styled('div')`
   & code {
     background-color: linen;
   }
-`
+`;
 export const Animated = styled('div')`
   ${basicStyles};
   ${hoverStyles};
@@ -73,4 +73,4 @@ export const Animated = styled('div')`
     background-color: linen;
   }
   animation: ${(props) => props.animation} 0.2s infinite ease-in-out alternate;
-`
+`;
