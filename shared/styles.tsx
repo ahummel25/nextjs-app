@@ -7,7 +7,7 @@ export const globalStyles = (
       html {
 		padding: 3rem 1rem;
         margin: 0;
-		background-image: url('${require('../images/image.png')}');
+		background-image: url('${require('../images/image.png?webp')}');
 		background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
